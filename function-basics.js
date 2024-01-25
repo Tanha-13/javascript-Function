@@ -49,4 +49,14 @@ function logInUserMessage(userName = "user"){
 }
 // const message = logInUserMessage('Nusrat');
 const message = logInUserMessage();
-console.log(message);
+// console.log(message);
+
+// todo: rest operator vs spread operator
+// rest operator
+// function calculateCartPrice(...number){
+//   return number;
+// }
+function calculateCartPrice(val1,val2,...number){
+  return number;
+}
+console.log(calculateCartPrice(200,300,400,500));
