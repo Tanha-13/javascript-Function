@@ -59,4 +59,43 @@ const message = logInUserMessage();
 function calculateCartPrice(val1,val2,...number){
   return number;
 }
-console.log(calculateCartPrice(200,300,400,500));
+// console.log(calculateCartPrice(200,300,400,500));
+
+// handle object
+// const user = {
+//   userName: 'Tanha',
+//   age: 24,
+//   price: 99,
+  
+// }
+const user = {
+  userName: 'Tanha',
+  age: 24,
+  prices: 99,
+  
+}
+// function handleObject(anyObject){
+//   console.log(`Username is ${anyObject.userName} and age is ${anyObject.age}. Order price is ${anyObject.price}`);
+// }
+function handleObject(anyObject){
+  // if(){
+
+  // }
+  console.log(`Username is ${anyObject.userName} and age is ${anyObject.age}. Order price is ${anyObject.price}`);
+}
+// handleObject(user);
+// passing objects directly
+handleObject({
+  userName: 'Nusrat',
+  age:20,
+  price: 400
+})
+
+// array in function
+const newArray = [200,300,400,500];
+
+function returnSecondValue(getArray){
+  return getArray[1];
+}
+// console.log(returnSecondValue(newArray));
+console.log(returnSecondValue([200,300,400]));
